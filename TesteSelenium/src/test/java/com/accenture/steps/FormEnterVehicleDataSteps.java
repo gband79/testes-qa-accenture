@@ -129,7 +129,7 @@ public class FormEnterVehicleDataSteps {
 
 	}
 
-	@Then("^I should receive the success pop-pup \"([^\"]*)\"$")
+	@Then("^I should receive the success pop-up \"([^\"]*)\"$")
 	public void iShouldReceiveTheSuccessPopPup(String arg1) throws Throwable {
 		Thread.sleep(10000);
 		String successMsg = driver.findElement(By.xpath("//div[4]/h2")).getText();
