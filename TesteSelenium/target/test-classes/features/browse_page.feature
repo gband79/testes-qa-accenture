@@ -9,7 +9,7 @@ Feature: Open and input data in Tricents page
     Given I am in Tricents web page
     When I fulfill the entire tricents data form
     And send the fullfiled data form
-    Then I should receive the success pop-pup "Sending e-mail success!"
+    Then I should receive the success pop-up "Sending e-mail success!"
  
 
   

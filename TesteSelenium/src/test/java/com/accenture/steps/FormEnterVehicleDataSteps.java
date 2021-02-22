@@ -129,13 +129,14 @@ public class FormEnterVehicleDataSteps {
 
 	}
 
-	@Then("^I should receive the success pop-pup \"([^\"]*)\"$")
-	public void iShouldReceiveTheSuccessPopPup(String arg1) throws Throwable {
+	
+	@Then("^I should receive the success pop-up \"([^\"]*)\"$")
+	public void iShouldReceiveTheSuccessPopUp(String arg1) throws Throwable {
 		Thread.sleep(10000);
 		String successMsg = driver.findElement(By.xpath("//div[4]/h2")).getText();
-		Assert.assertEquals(arg1, successMsg);	}
-
-		
+		Assert.assertEquals(arg1, successMsg);	
+	}
+	
 	
 
 	@Before
